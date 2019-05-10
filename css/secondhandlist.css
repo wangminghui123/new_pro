@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(245,245,245);
+}
+header{
+    width: 100%;
+    height: .4rem;
+    background: #ff8a00;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header>img:nth-child(1){
+    width: 1rem;
+}
+header>img:nth-child(2){
+    width: .25rem;
+    transform: translateX(.3rem);
+}
+header>img:nth-child(3){
+    width: .25rem;
+}
+.first_{
+    width: 100%;
+    height: .6rem;
+    font-size: 0;
+    text-align: center;
+    line-height: .7rem;
+    position: relative;
+}
+.first_>div{
+    width: .01rem;
+    height: .15rem;
+    background: rgb(133,3,133);
+    position: absolute;
+    right: .5rem;
+    top: .225rem;
+}
+.first_>input{
+    width: 3rem;
+    height: .4rem;
+    border: .01rem solid #cccccc;
+    border-radius: .05rem;
+    background: url("../SecondHandList-imgs/search_03.png") no-repeat right .1rem center white;
+    background-size: .2rem;
+    text-indent: 1em;
+}
+.second_{
+    width: 100%;
+    height: .35rem;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: .01rem solid #cccccc;
+    border-top: .01rem solid #cccccc;
+}
+.second_>div{
+    color: rgb(102,102,102);
+    width: 25%;
+    text-align: center;
+    font-size: .16rem;
+    font-weight: bolder;
+    background: url("../SecondHandList-imgs/1.png") no-repeat right .05rem top;
+}
+
+
+.list{
+    list-style: none;
+    background: white;
+}
+.list>li{
+    width: 3rem;
+    height: 1.4rem;
+    border-bottom: .01rem solid #ff8a00;
+    display: flex;
+    align-items: center;
+    margin-left: .1rem;
+    line-height: .25rem;
+}
+.list>li:last-child{
+    border: none;
+}
+.list>li>img{
+    width: .8rem;
+}
+.list>li p{
+    margin-left: .1rem;
+}
+.list>li p:nth-child(1){
+    width: 2.1rem;
+    font-size: .16rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list>li p:nth-child(2){
+    width: 2.1rem;
+    font-size: .14rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+.list>li p:nth-child(3)>span{
+    float: right;
+    color: #ff8a00;
+}
+.list>li p:nth-child(3){
+    width: 2.1rem;
+    font-size: .13rem;
+    color: #a3a3a3;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.list>li p:nth-child(4){
+    width: 2.1rem;
+    font-size: .13rem;
+    color: #a3a3a3;
+}
+
+
+.footer{
+    width: 100%;
+    height: 1.4rem;
+    background: #2f3130;
+    font-size: 0;
+    overflow: hidden;
+}
+.foot-top{
+    width: 3rem;
+    height: .35rem;
+    font-size: .13rem;
+    line-height: .35rem;
+    color: #969696;
+    border-bottom: .01rem solid #969696;
+    margin-left: .1rem;
+    font-weight: bold;
+}
+.foot-bottom{
+    width: 3rem;
+    margin-left: .15rem;
+    margin-top: .1rem;
+}
+.first,.second{
+    width: 50%;
+    float: left;
+}
+.first>img,.second>img{
+    width: .2rem;
+    float: left;
+
+}
+.first>span,.second>span{
+    display: inline-block;
+    float: left;
+    margin-left: .1rem;
+}
+.first>span>p,.second>span>p{
+    text-align: center;
+    font-size: .13rem;
+    color: #969696;
+}
+.footer>div:last-child{
+    width: 100%;
+    text-align: center;
+    color: #969696;
+    margin-top: .15rem;
+    float: left;
+}
+.footer>div>p{
+    font-size: .13rem;
+}
+
+
+
+
+
+
+.location{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5.68rem;
+    background: rgba(0, 0, 0, 0.61);
+}
+
+.location>.second_{
+    border: none;
+}
+.location>.second_>.top_{
+    color: #ff8a00;
+    background: url("../SecondHandList-imgs/2.png") no-repeat right .05rem top;
+}
+
+
+/* 区域   */
+.site{
+    display: flex;
+    background: white;
+}
+.site>.ul_1{
+    width: .8rem;
+    height: 2.95rem;
+    list-style: none;
+}
+.site .li_{
+    color: #ff8a00;
+}
+.site>.ul_1>li:nth-child(1){
+    width: 100%;
+    height: .45rem;
+    text-align: center;
+    line-height: .45rem;
+    color: #ff8a00;
+    font-size: .16rem;
+    font-weight: bold;
+}
+.site>.ul_1>li:nth-child(2){
+    height: 2.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: .16rem;
+    font-weight: bold;
+    color: black;
+    line-height: .5rem;
+    background: rgb(245,245,245);
+    border-right: .01rem solid #c6c6c6;
+}
+.ul_2,.ul_3{
+    width: 1.2rem;
+    height: 2.95rem;
+    list-style: none;
+    text-align: center;
+    line-height: .42rem;
+}
+.ul_2>li,.ul_3>li{
+    font-size: .13rem;
+    color: #848484;
+    font-weight: bold;
+}
+
+
+
+/* 价格   */
+.price{
+    height: 2.9rem;
+    list-style: none;
+    background: white;
+}
+.price>li{
+    height: .4rem;
+    width: 2.9rem;
+    line-height: .4rem;
+    font-size: .13rem;
+    color: #555555;
+    border-bottom: .01rem solid #cccccc;
+    margin-left: .15rem;
+    font-weight: bold;
+}
+.price>li:last-child{
+    border: none;
+}
+
+
+/*    房型      */
+
+.house{
+    height: 3.15rem;
+    background: white;
+    list-style: none;
+}
+.house>li{
+    height: .4rem;
+    width: 2.9rem;
+    line-height: .4rem;
+    font-size: .13rem;
+    color: #555555;
+    border-bottom: .01rem solid #cccccc;
+    margin-left: .15rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+.house>li:nth-child(6){
+    border: none;
+}
+.house>li>span{
+    display: inline-block;
+    width: .15rem;
+    height: .15rem;
+    border: .01rem solid #cccccc;
+    float: right;
+    margin-top: .125rem;
+}
+.house>li:nth-child(3)>span{
+    border: .01rem solid #ff8a00;
+    background: url("../SecondHandList-imgs/ok.png") no-repeat right center;
+    background-size: .15rem .15rem;
+}
+.house>li>button{
+    width: 2.9rem;
+    height: .4rem;
+    background: #ff8a00;
+    color: white;
+    font-size: .15rem;
+    text-align: center;
+    line-height: .4rem;
+    border: none;
+}
+
+
+/*  更多        */
+.more{
+    background: white;
+}
+.more-first{
+    width: 2.9rem;
+    border-bottom: .01rem solid #cccccc;
+    margin-left: .15rem;
+    font-size: 0;
+    padding-bottom: .2rem;
+}
+.more-first>p:nth-child(1){
+    font-size: .13rem;
+    font-weight: bold;
+    margin-top: .2rem;
+}
+.more-first>p:nth-child(2){
+    font-size: 0;
+}
+.more-first>p:nth-child(2)>span{
+    display: inline-block;
+    height: .25rem;
+    width: .65rem;
+    border: .01rem #cccccc solid;
+    text-align: center;
+    line-height: .25rem;
+    font-size: .12rem;
+    margin-left: .05rem;
+    margin-top: .1rem;
+}
+
